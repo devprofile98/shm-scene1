@@ -18,6 +18,8 @@ mkdir build && cd build
 cmake .. && cmake --build . -j10 && ./bin/test
 ```
 
+> !Note: Make sure you have **Assimp** and **glfw** installed on your system. 
+
 
 ![alt SpotLight](./images/scene3.png?raw=true)
 ![alt text](./images/scene4.png?raw=true)
