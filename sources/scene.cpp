@@ -1,7 +1,7 @@
 #include "Engine.hpp"
 #include "Light.hpp"
 #include "Logger.hpp"
-#include "birdModel.hpp"
+// #include "birdModel.hpp"
 #include "buffers.hpp"
 #include "chrono"
 #include "glm/gtx/string_cast.hpp"
@@ -65,7 +65,7 @@ void Engine::outLoop(GLFWwindow *window) {
   plane2.model->setRotation(glm::vec3{0.0, 1.0, 0.0}, 60.0f);
   plane2.isAlpha = true;
 
-  static BirdActor bird_object{};
+  static StaticActor bird_object{};
   bird_object.setShader("/assets/models/model_loading.vs",
                         "/assets/models/model_loading.fs");
 

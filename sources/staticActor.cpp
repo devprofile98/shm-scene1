@@ -1,9 +1,9 @@
 #include "staticActor.hpp"
-#include "pipePhysic.hpp"
 
 StaticActor::StaticActor() {
 
   SHM::Engine::GetEngine()->getRenderer()->m_actors.push_back(this);
+  //   SHM::Engine::GetEngine()->setMovingCharacter(this);
   std::cout << "statically called Static actor to add actor" << std::endl;
 }
 StaticActor::~StaticActor() {
